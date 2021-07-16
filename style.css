@@ -1,0 +1,447 @@
+@font-face {
+    font-family: Avenir;
+    src: url(fonts/Avenir.ttc);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Avenir;
+}
+
+a {
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+
+body {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+/* This is the form Modal */
+
+.re-marketing-form-modal {
+    position: fixed;
+    display: none;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+    z-index: 999;
+}
+
+.re-marketing-form-modal-exit-btn-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.re-marketing-form-modal-exit-btn {
+    padding: 10px;
+    font-size: 2em;
+}
+
+.re-marketing-form-modal-exit-btn>i {
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+
+.re-marketing-form-modal-exit-btn>i:hover {
+    color: red;
+}
+
+.form-title {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.form-title>img {
+    width: 100%;
+}
+
+.form-title>h1 {
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.form-box {
+    width: 80%;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.form-box>form {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.form-box>form>input {
+    width: 96%;
+    font-size: 1.2em;
+    margin-bottom: 5px;
+    padding: 5px;
+    border: 1px solid #dcdcdc;
+}
+
+#re-marketing-btn {
+    width: 100%;
+    background-color: #ea2329;
+    color: #fff;
+    border: none;
+    margin: 0 auto;
+    text-align: center;
+    padding: 10px 5px;
+}
+
+.hero-container {
+    width: 100%;
+    height: 100vh;
+}
+
+
+/* This is the NAv Section */
+
+.hero-header {
+    width: 100%;
+    position: fixed;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    height: auto;
+    margin: 0 auto;
+}
+
+.remarketing-3-hero-logo,
+.re-marketing-3-nav {
+    width: 45%;
+    margin: 0 auto;
+    text-align: center;
+    /* border: 1px solid red; */
+}
+
+.remarketing-3-hero-logo>img {
+    width: 80%;
+}
+
+.re-marketing-3-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-icons,
+.phone-number {
+    width: 45%;
+}
+
+.social-icons>ul {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-icons>ul>li {
+    width: 33%;
+    list-style: none;
+    text-align: center;
+}
+
+.social-icons>ul>li>a {
+    text-align: center;
+    color: #fff;
+    font-size: 2em;
+}
+
+.phone-number {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.phone-number>a {
+    color: rgb(255, 255, 255);
+    font-size: 2em;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+
+/* This is the Main Content Section */
+
+.hero-wrapper {
+    padding-top: 150px;
+    height: 84vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.hero-box {
+    width: 45%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.re-marketing-main-picture {
+    width: 100%;
+}
+
+.re-marketing-main-picture>img {
+    width: 100%;
+}
+
+
+/* This is the Text Content Section */
+
+.marketing-main-text-box {
+    width: 80%;
+}
+
+.marketing-main-text-box>h1 {
+    font-size: 3em;
+    color: #fff;
+}
+
+.remarketing-main-points {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.remarketing-main-points>li {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.remarketing-main-points>li>span {
+    font-size: 1.5em;
+    color: #373737;
+    padding-right: 5px;
+}
+
+.remarketing-main-points>li>h2 {
+    font-size: 1.5em;
+    text-transform: capitalize;
+    color: #fff;
+}
+
+.remarketing-form-btn {
+    width: 100%;
+    padding: 10px 0;
+}
+
+.remarketing-form-btn>a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #373737;
+    text-align: center;
+    color: #fff;
+    font-size: 1.5em;
+    text-decoration: none;
+    padding: 20px 0;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+
+.remarketing-form-btn>a:hover {
+    background-color: #000;
+}
+
+
+/* This is the Footer Section */
+
+.remarketing-footer-section {
+    width: 100%;
+    height: auto;
+    background-color: #373737;
+    padding: 40px 0 40px 0;
+    margin: 0 auto;
+}
+
+.remarketing-footer-section>ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.remarketing-footer-section>ul>li {
+    width: 33%;
+    text-align: center;
+    color: #fff;
+    list-style: none;
+    /* border: 1px solid red; */
+}
+
+.remarketing-footer-section>ul>li>a {
+    color: #fff;
+}
+
+
+/* This is the Mobile Footer */
+
+.re-marketing-footer-call-form {
+    position: fixed;
+    width: 100%;
+    display: none;
+    bottom: 0;
+}
+
+.re-marketing-footer-call-form>ul {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.re-marketing-footer-call-form>ul>li {
+    width: 50%;
+    text-align: center;
+    list-style: none;
+}
+
+.re-marketing-footer-call-form>ul>li>a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    padding: 20px 0;
+    color: #fff;
+}
+
+.re-marketing-footer-call-form>ul>li:nth-child(1)>a {
+    background-color: #ea2329;
+}
+
+.re-marketing-footer-call-form>ul>li:nth-child(1)>a:hover {
+    background-color: #b9191f;
+}
+
+.re-marketing-footer-call-form>ul>li:nth-child(2)>a {
+    background-color: #23a6d5;
+}
+
+.re-marketing-footer-call-form>ul>li:nth-child(2)>a:hover {
+    background-color: #1983a9;
+}
+
+@media only screen and (max-width:1280px) {
+    .marketing-main-text-box>h1 {
+        font-size: 2.5em;
+    }
+}
+
+@media only screen and (max-width:1070px) {
+    .social-icons,
+    .phone-number {
+        width: 100%;
+    }
+    .hero-box {
+        width: 50%;
+    }
+    .marketing-main-text-box>h1 {
+        font-size: 2em;
+    }
+    .remarketing-form-btn>a {
+        font-size: 1.2em;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .social-icons>ul>li>a {
+        font-size: 1.3em;
+    }
+    .hero-box {
+        width: 100%;
+    }
+    .re-marketing-main-picture {
+        width: 85%;
+    }
+}
+
+@media only screen and (max-width:633px) {
+    .hero-header {
+        background-color: #373737;
+        padding: 10px 0;
+    }
+    .marketing-main-text-box>h1 {
+        font-size: 1.8em;
+    }
+    .remarketing-main-points>li>h2 {
+        font-size: 1.2em;
+    }
+}
+
+@media only screen and (max-width:500px) {
+    .re-marketing-3-nav {
+        display: none;
+    }
+    .hero-wrapper {
+        padding-top: 117px;
+    }
+    .remarketing-footer-section>ul>li {
+        width: 100%;
+    }
+    .marketing-main-text-box>h1 {
+        font-size: 1.8em;
+    }
+    .re-marketing-footer-call-form {
+        display: flex;
+    }
+    .remarketing-footer-section {
+        padding: 40px 0 100px 0;
+    }
+    .remarketing-footer-section>ul>li {
+        font-size: .8em;
+    }
+}
+
+@media only screen and (max-height:600px) {
+    .hero-header {
+        background-color: #373737;
+    }
+}
