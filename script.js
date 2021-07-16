@@ -10,8 +10,9 @@ $(".re-marketing-video-modal").click(() => {
 
 $(".re-marketing-form-modal-display-btn").click(() => {
     $(".re-marketing-form-modal").css("display", "flex");
+    $(".re-marketing-form-modal").css("bottom", "0");
 })
 
 $(".re-marketing-form-modal-exit-btn i").click(() => {
-    $(".re-marketing-form-modal").css("display", "none");
+    $(".re-marketing-form-modal").css("bottom", "-100%");
 })
