@@ -100,26 +100,34 @@ body {
     font-size: 1.5em;
     text-align: center;
     color: #fff;
+    padding: 20px;
 }
 
 .form-box {
     width: 80%;
     max-width: 700px;
     margin: 0 auto;
+    box-shadow: 0px 6px 15px 2px #00000014;
+    padding: 10% 2%;
 }
 
 .form-box>form {
-    width: 100%;
+    width: 60%;
     margin: 0 auto;
     text-align: center;
 }
 
 .form-box>form>input {
-    width: 96%;
+    width: 90%;
     font-size: 1.2em;
-    margin-bottom: 10px;
-    padding: 5px;
+    margin-bottom: 20px;
+    padding: 15px;
     border: 1px solid #dcdcdc;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
 }
 
 #re-marketing-btn {
@@ -129,7 +137,7 @@ body {
     border: none;
     margin: 0 auto;
     text-align: center;
-    padding: 10px 5px;
+    padding: 15px;
     transition: .5s;
     -webkit-transition: .5s;
     -moz-transition: .5s;
@@ -175,13 +183,18 @@ body {
 .re-marketing-3-nav {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
 }
 
 .phone-number>h2 {
     color: #fff;
-    text-align: left;
+    text-align: right;
+}
+
+.social-icons {
+    width: 50%;
+    /* margin: 0 auto; */
 }
 
 .social-icons>ul {
@@ -341,10 +354,15 @@ body {
     align-items: center;
 }
 
-.remarketing-footer-section {}
-
 .re-marketing-footer-box {
     width: 45%;
+}
+
+.re-marketing-footer-box:nth-child(2) {
+    width: 45%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
 }
 
 
@@ -438,17 +456,7 @@ body {
     }
 }
 
-@media only screen and (max-width:633px) {
-    .hero-header {
-        background-color: #373737;
-        padding: 10px 0;
-    }
-    .marketing-main-text-box>h1 {
-        font-size: 1.8em;
-    }
-    .remarketing-main-points>li>h2 {
-        font-size: 1.2em;
-    }
+@media only screen and (max-width:741px) {
     .phone-number {
         display: none;
     }
@@ -461,7 +469,23 @@ body {
     }
 }
 
+@media only screen and (max-width:633px) {
+    .hero-header {
+        background-color: #373737;
+        padding: 10px 0;
+    }
+    .marketing-main-text-box>h1 {
+        font-size: 1.8em;
+    }
+    .remarketing-main-points>li>h2 {
+        font-size: 1.2em;
+    }
+}
+
 @media only screen and (max-width:500px) {
+    .remarketing-3-hero-logo>img {
+        width: 60%;
+    }
     .re-marketing-3-nav {
         display: none;
     }
@@ -486,6 +510,27 @@ body {
     .re-marketing-footer-box {
         width: 80%;
         text-align: center;
+    }
+    .form-box>form {
+        width: 85%;
+    }
+    .form-title {
+        width: 82%;
+    }
+}
+
+@media only screen and (max-width:414px) {
+    .form-box>form {
+        width: 85%;
+    }
+    .links>a {
+        font-size: .8em;
+    }
+}
+
+@media only screen and (max-width:320px) {
+    .form-box>form>input {
+        padding: 10px;
     }
 }
 
