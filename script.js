@@ -18,7 +18,7 @@ $(".re-marketing-form-modal-exit-btn i").click(() => {
 })
 
 window.onload = chooseImg;
-var theImages = new Array("imgs/coolguy2.webp", "imgs/coolguy2.webp", "imgs/lady-lifestyle-2.png");
+var theImages = new Array("imgs/coolguy2.webp", "imgs/Fam-lifestyle.png", "imgs/lady-lifestyle-2.png");
 
 function chooseImg() {
     var randomNumber = Math.floor(Math.random() * theImages.length);
