@@ -21,6 +21,6 @@ window.onload = chooseImg;
 var theImages = new Array("imgs/coolguy2.webp", "imgs/coolguy2.webp", "imgs/lady-lifestyle-2.png");
 
 function chooseImg() {
-    var randomNum = Math.floor(Math.random() * theImages.length);
-    document.getElementById("imgDisplay").src = theImages[randomNum];
+    var randomNumber = Math.floor(Math.random() * theImages.length);
+    document.getElementById("imgDisplay").src = theImages[randomNumber];
 }
