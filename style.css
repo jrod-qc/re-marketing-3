@@ -231,7 +231,7 @@ body {
 }
 
 .phone-number {
-    width: 95%;
+    width: 100%;
     max-width: 700px;
     display: flex;
     flex-wrap: wrap;
@@ -250,8 +250,8 @@ body {
 /* This is the Main Content Section */
 
 .hero-wrapper {
-    padding-top: 150px;
-    height: 84vh;
+    /* padding-top: 85px; */
+    height: 100vh;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -263,6 +263,10 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+}
+
+.hero-box:nth-child(2)>.re-marketing-main-picture {
+    display: none;
 }
 
 .re-marketing-main-picture {
@@ -281,7 +285,8 @@ body {
 }
 
 .marketing-main-text-box>h1 {
-    font-size: 2.9em;
+    font-size: 3.5em;
+    max-width: 950px;
     color: #fff;
 }
 
@@ -304,15 +309,18 @@ body {
 }
 
 .remarketing-main-points>li>span {
-    font-size: 1.5em;
-    color: #373737;
+    font-size: 2em;
+    color: #fff;
     padding-right: 5px;
+    width: 10%;
+    max-width: 50px;
 }
 
 .remarketing-main-points>li>h2 {
     font-size: 1.5em;
     text-transform: capitalize;
     color: #fff;
+    width: 90%;
 }
 
 .remarketing-form-btn {
@@ -364,16 +372,37 @@ body {
     width: 100%;
     height: auto;
     background-color: #ffffff6e;
-    padding: 20px;
+    padding: 20px 0;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
+    bottom: 0;
+    position: absolute;
 }
 
 .re-marketing-footer-box {
-    width: 45%;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.re-marketing-footer-box>.social-icons {
+    width: 100%;
+}
+
+.re-marketing-footer-box>.social-icons>ul {
+    margin: 0 auto;
+    padding-top: 10px;
+}
+
+.remarketing-footer-section>.re-marketing-footer-box>.social-icons>ul {
+    justify-content: flex-end;
+    margin: 0;
+}
+
+.re-marketing-footer-box>.social-icons>ul>li>a {
+    color: #fff;
 }
 
 .re-marketing-footer-box:nth-child(2) {
@@ -390,6 +419,9 @@ body {
     position: fixed;
     width: 100%;
     display: none;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     bottom: 0;
 }
 
@@ -433,19 +465,34 @@ body {
 
 @media only screen and (max-width:1535px) {
     .marketing-main-text-box>h1 {
-        font-size: 3.5em;
+        font-size: 3em;
+    }
+    .remarketing-form-btn>a {
+        width: 90%;
+    }
+    .links {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width:1375px) {
+    .remarketing-main-points>li>h2 {
+        width: 85%;
     }
 }
 
 @media only screen and (max-width:1280px) {
+    .phone-number>h2 {
+        font-size: 1.2em;
+    }
     .marketing-main-text-box>h1 {
         font-size: 2.5em;
     }
     .remarketing-form-btn>a {
-        width: 80%;
+        width: 100%;
     }
     .links {
-        width: 80%;
+        width: 100%;
     }
 }
 
@@ -465,18 +512,54 @@ body {
     }
 }
 
+@media only screen and (max-width:1024px) {
+    .hero-box {
+        width: 100%;
+        height: 75%;
+    }
+    .re-marketing-main-picture {
+        width: 70%;
+    }
+    .marketing-main-text-box>h1 {
+        text-align: center;
+        font-size: 3em;
+    }
+    .remarketing-main-points>li {
+        justify-content: center;
+    }
+    .remarketing-form-btn>a {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .hero-wrapper {
+        align-items: center;
+    }
+    .hero-box:nth-child(1) {
+        display: none;
+    }
+    .hero-box:nth-child(2)>.re-marketing-main-picture {
+        display: flex;
+    }
+}
+
 @media only screen and (max-width:930px) {
     .remarketing-3-hero-logo>img {
         width: 75%;
-    }
-    .phone-number>h2 {
-        font-size: 1.2em;
     }
     .remarketing-form-btn>a {
         width: 100%;
     }
     .links {
         width: 100%;
+    }
+    .phone-number>h2 {
+        font-size: 1em;
+    }
+    .marketing-main-text-box>h1 {
+        font-size: 2.5em;
+    }
+    .remarketing-main-points>li>h2 {
+        font-size: 1.5em;
     }
 }
 
@@ -486,9 +569,17 @@ body {
     }
     .hero-box {
         width: 100%;
+        height: 87%;
     }
-    .re-marketing-main-picture {
-        width: 85%;
+    .re-marketing-footer-box {
+        width: 50%;
+        margin: 0 auto;
+    }
+    .social-icons {
+        justify-content: center;
+    }
+    .social-icons>ul>li>a {
+        color: #fff;
     }
 }
 
@@ -507,7 +598,7 @@ body {
 
 @media only screen and (max-width:633px) {
     .hero-header {
-        background-color: #373737;
+        /* background-color: #373737; */
         padding: 10px 0;
     }
     .marketing-main-text-box>h1 {
@@ -515,6 +606,10 @@ body {
     }
     .remarketing-main-points>li>h2 {
         font-size: 1.2em;
+    }
+    .hero-box {
+        width: 100%;
+        height: 55%;
     }
 }
 
@@ -524,9 +619,6 @@ body {
     }
     .re-marketing-3-nav {
         display: none;
-    }
-    .hero-wrapper {
-        padding-top: 117px;
     }
     .remarketing-footer-section>ul>li {
         width: 100%;
@@ -538,7 +630,8 @@ body {
         display: flex;
     }
     .remarketing-footer-section {
-        padding: 40px 0 60px 0;
+        padding: 20px 0 70px 0;
+        display: none;
     }
     .remarketing-footer-section>ul>li {
         font-size: .8em;
@@ -546,15 +639,57 @@ body {
     .re-marketing-footer-box {
         width: 80%;
         text-align: center;
+        margin: 0 auto;
+        padding-top: 10px;
+    }
+    .re-marketing-footer-box>.social-icons>ul>li>a {
+        color: #fff;
     }
     .form-box>form {
         width: 85%;
     }
     .form-title {
-        width: 82%;
+        width: 90%;
+    }
+    .form-title>h2 {
+        font-size: 1.2em;
+    }
+    .form-box>form>input {
+        font-size: 1em;
+        padding: 10px;
     }
     .remarketing-form-btn {
         display: none;
+    }
+    .hero-box {
+        width: 100%;
+        height: 40%;
+    }
+    .social-icons>ul {
+        margin: 0 auto;
+    }
+    .remarketing-footer-section-2 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        background-color: #ffffffa6;
+        padding: 5px 0;
+    }
+}
+
+@media only screen and (max-width:600px) {
+    .hero-box {
+        height: 80%;
+    }
+    .hero-container {
+        height: auto;
+        overflow: scroll;
+    }
+    .re-marketing-form-modal {
+        height: 100%;
+        overflow: scroll;
     }
 }
 
@@ -565,16 +700,62 @@ body {
     .links>a {
         font-size: .8em;
     }
+    .hero-header {
+        position: relative;
+    }
+    .hero-container {
+        height: auto;
+        overflow: scroll;
+    }
+    .social-icons {
+        justify-content: center;
+    }
+    .marketing-main-text-box>h1 {
+        font-size: 1.6em;
+    }
+    .remarketing-main-points>li>h2 {
+        font-size: 1em;
+    }
+    .hero-box {
+        height: 95%;
+    }
+    .re-marketing-main-picture {
+        width: 90%;
+    }
+    .hero-wrapper {
+        height: auto;
+    }
+    .re-marketing-footer-box:nth-child(2) {
+        width: 90%;
+        margin: 0 auto;
+        justify-content: center;
+    }
+    .remarketing-main-points>li>span {
+        font-size: 1.5em;
+    }
+    .form-box {
+        padding: 0;
+    }
+    .form-title>h2 {
+        padding: 10px 0;
+    }
 }
 
 @media only screen and (max-width:320px) {
     .form-box>form>input {
         padding: 10px;
     }
-}
-
-@media only screen and (max-height:600px) {
-    .hero-header {
-        background-color: #373737;
+    .remarketing-main-points>li>span {
+        font-size: 1.5em;
+    }
+    .hero-wrapper {
+        padding-bottom: 100px;
+    }
+    .marketing-main-text-box>h1 {
+        font-size: 1.5em;
+    }
+    .re-marketing-form-container {
+        height: auto;
+        overflow: scroll;
     }
 }
