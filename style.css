@@ -118,6 +118,7 @@ body {
 
 .form-box>.links {
     width: 100%;
+    padding: 10px 0 0 0;
 }
 
 .form-box>form {
@@ -387,6 +388,10 @@ body {
     margin: 0 auto;
 }
 
+.re-marketing-footer-box>p {
+    color: #fff;
+}
+
 .re-marketing-footer-box>.social-icons {
     width: 100%;
 }
@@ -556,7 +561,7 @@ body {
         font-size: 1em;
     }
     .marketing-main-text-box>h1 {
-        font-size: 2.5em;
+        font-size: 2em;
     }
     .remarketing-main-points>li>h2 {
         font-size: 1.5em;
@@ -734,10 +739,13 @@ body {
         font-size: 1.5em;
     }
     .form-box {
-        padding: 0;
+        padding: 15px 0;
     }
     .form-title>h2 {
         padding: 10px 0;
+    }
+    .marketing-main-text-box {
+        width: 87%;
     }
 }
 
