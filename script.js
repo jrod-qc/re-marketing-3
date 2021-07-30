@@ -17,10 +17,10 @@ $(".re-marketing-form-modal-exit-btn i").click(() => {
     $(".re-marketing-form-modal").css("bottom", "-100%");
 })
 
-window.onload = chooseImg;
-var theImages = new Array("imgs/coolguy2.webp", "imgs/Fam-lifestyle.png", "imgs/lady-lifestyle-2.png");
+// window.onload = chooseImg;
+// var theImages = new Array("imgs/coolguy2.webp", "imgs/Fam-lifestyle.png", "imgs/lady-lifestyle-2.png");
 
-function chooseImg() {
-    var randomNumber = Math.floor(Math.random() * theImages.length);
-    document.getElementById("imgDisplay").src = theImages[randomNumber];
-}
+// function chooseImg() {
+//     var randomNumber = Math.floor(Math.random() * theImages.length);
+//     document.getElementById("imgDisplay").src = theImages[randomNumber];
+// }
