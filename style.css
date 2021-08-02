@@ -1,17 +1,9 @@
-@font-face {
-    font-family: Avenir;
-    src: url('/fonts/exported-fonts/Avenir-Book-01.ttf') format('ttf');
+.elementor-column {
+    min-height: 0px;
 }
 
-@font-face {
-    font-family: Avenir-heavy;
-    src: url('/fonts/exported-fonts/Avenir-Heavy-05.ttf') format('ttf');
-}
-
-* {
-    padding: 0;
+h2{
     margin: 0;
-    font-family: Avenir;
 }
 
 a {
@@ -22,7 +14,7 @@ a {
     -o-transition: .5s;
 }
 
-body {
+.hero-wrapper {
     background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
     background-size: 400% 400%;
     animation: gradient 15s ease infinite;
@@ -298,6 +290,7 @@ body {
     justify-content: center;
     align-items: center;
     padding: 3% 0;
+    margin: 0;
 }
 
 .remarketing-main-points>li {
@@ -394,6 +387,7 @@ body {
 
 .re-marketing-footer-box>.social-icons {
     width: 100%;
+    justify-content: flex-end;
 }
 
 .re-marketing-footer-box>.social-icons>ul {
@@ -436,6 +430,7 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    margin: 0;
 }
 
 .re-marketing-footer-call-form>ul>li {
@@ -696,6 +691,40 @@ body {
         height: 100%;
         overflow: scroll;
     }
+    
+    .re-marketing-main-picture>img{
+        width: 75%;
+        margin: 0 auto;
+    }
+    
+    .marketing-main-text-box>h1{
+        font-size: 1.5em;
+        margin: 0;
+    }
+    
+    .remarketing-main-points>li>span{
+        font-size: 1.5em;
+    }
+    
+    .remarketing-form-btn>a{
+        padding: 10px 0;
+    }
+    
+    .form-box>form{
+        width: 70%;
+    }
+    .form-box>form>input{
+        padding: 10px;
+        font-size: 1em;
+    }
+    
+    .remarketing-main-points>li>h2 {
+    font-size: 1em;
+}
+
+.remarketing-footer-section{
+    padding: 10px 0;
+}
 }
 
 @media only screen and (max-width:414px) {
@@ -705,13 +734,13 @@ body {
     .links>a {
         font-size: .8em;
     }
-    .hero-header {
-        position: relative;
-    }
-    .hero-container {
-        height: auto;
-        overflow: scroll;
-    }
+    /*.hero-header {*/
+    /*    position: relative;*/
+    /*}*/
+    /*.hero-container {*/
+    /*    height: auto;*/
+    /*    overflow: scroll;*/
+    /*}*/
     .social-icons {
         justify-content: center;
     }
@@ -722,13 +751,18 @@ body {
         font-size: 1em;
     }
     .hero-box {
-        height: 95%;
+        height: 75%;
     }
     .re-marketing-main-picture {
         width: 90%;
     }
+    
+    .re-marketing-main-picture>img {
+    width: 75%;
+    margin: 0 auto;
+}
     .hero-wrapper {
-        height: auto;
+        height: 100vh;
     }
     .re-marketing-footer-box:nth-child(2) {
         width: 90%;
@@ -750,20 +784,33 @@ body {
 }
 
 @media only screen and (max-width:320px) {
+    .form-title>h2 {
+    font-size: 1em;
+}
     .form-box>form>input {
-        padding: 10px;
+        padding: 5px;
+        font-size: .8em;
     }
     .remarketing-main-points>li>span {
-        font-size: 1.5em;
+        font-size: 1.3em;
     }
     .hero-wrapper {
-        padding-bottom: 100px;
+        padding-bottom: 0;
     }
     .marketing-main-text-box>h1 {
-        font-size: 1.5em;
+        font-size: 1.3em;
+        margin-bottom: 10px;
     }
     .re-marketing-form-container {
         height: auto;
         overflow: scroll;
+    }
+    
+    #re-marketing-bt{
+        padding:10px;
+    }
+    
+    .re-marketing-form-modal-exit-btn{
+        font-size: 1.5em;
     }
 }
